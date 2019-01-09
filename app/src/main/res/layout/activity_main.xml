@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="Player 1"
+                android:textColor="#3d3b3b"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/player_1_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#c20a00"
+                android:onClick="AddTwoForPlayer1"
+                android:paddingBottom="8dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:text=" +2 POINTS "
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="#c20a00"
+                android:onClick="AddOneForPlayer1"
+                android:paddingBottom="8dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:text="Escape "
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#c20a00"
+                android:onClick="AddThreeForPlayer1"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:text="Near Fall 5 second"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="Player 2"
+                android:textColor="#3d3b3b"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/player_2_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#4f4ff1"
+                android:onClick="AddTwoForPlayer2"
+                android:paddingBottom="8dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:text=" +2 POINTS "
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="#4f4ff1"
+                android:onClick="AddOneForPlayer2"
+                android:paddingBottom="8dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:text="Escape "
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#4f4ff1"
+                android:onClick="AddThreeForPlayer2"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:text="Near Fall 5 second"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/verticalSeperatorHours"
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:onClick="REST"
+        android:padding="12dp"
+        android:text="REST"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="325dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/wrestling" />
+</RelativeLayout>
+
+
+
+
+
